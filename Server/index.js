@@ -9,6 +9,7 @@ const handle = require("./handlers");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+// const db = require("./models");
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
