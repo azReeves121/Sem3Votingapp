@@ -1,12 +1,12 @@
-import axios from "axios";
+import axios from 'axios';
 
-const host = "http://localhost:3000/api";
+const host = 'http://localhost:4000/api';
 
-export const setToken = (token) => {
+export const setToken = token => {
   if (token) {
-    axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   } else {
-    delete axios.defaults.headers.common["Authorization"];
+    delete axios.defaults.headers.common['Authorization'];
   }
 };
 
